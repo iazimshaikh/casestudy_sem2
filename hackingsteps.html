@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hackingstepss</title>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg:hover{
+  background-color: black;
+  color: white;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  background-color: black;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.popimg{
+    height: 100px;;
+}
+header {
+		background-color: #333;
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+	}
+
+	main {
+		margin: 20px;
+	}
+
+	h1, h2, h3 {
+		margin: 10px 0;
+	}
+
+	p {
+		margin: 10px 0;
+	}
+
+	ol {
+		margin-left: 20px;
+	}
+
+	footer {
+		background-color: #333;
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+	}
+
+    .card a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  
+
+}
+
+    </style>
+</head>
+<body>
+   
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>How hacker hacks our computer ? Steps of hacking</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="cryptoimg" style="height:300px;"><img src="images/blogs/hackingsteps.png" height="300px" width="100%" alt=""></div><br>
+            <header>
+                <h1>How to hack ? Steps of Hacking</h1>
+            </header>
+            <main>
+                <h1>Steps in Ethical Hacking</h1>
+
+                <p>Reconnaissance, Scanning, Exploitation, and Clearing Footprints Logs are the four important steps in ethical hacking.</p>
+              
+                <h2>1. Reconnaissance</h2>
+                <p>Reconnaissance is the first step in ethical hacking. It involves gathering information about the system and the victim. This step is important because it helps the hacker to understand the system and find vulnerabilities. The information can be gathered through social engineering or other means.</p>
+              
+                <h2>2. Scanning</h2>
+                <p>Scanning is the second step in ethical hacking. It involves scanning the system of the victim to find vulnerabilities. In this step, the hacker will find the IP address, domain name, operating system information, and which ports are opened on the victim's system. The goal is to extract the right information from the gathered data.</p>
+              
+                <h2>3. Exploitation</h2>
+                <p>Exploitation is the third step in ethical hacking. It involves gaining access to the system by using different types of exploits or tools. The hacker will hack the system and gain access to the information they want to retrieve.</p>
+              
+                <h2>4. Clearing Footprints Logs</h2>
+                <p>The final step in ethical hacking is clearing footprints logs. In this step, the hacker removes all the records, history, and other traces of their activities. This is done to avoid being tracked by cybersecurity experts.</p>
+              
+                <p>Remember, ethical hacking requires years of hard work and a deep understanding of various technologies and topics. It's not something that can be learned by watching a few videos or reading a few articles.</p>
+              
+                <p>Stay tuned for the next blog post where we will dive deeper into the topics mentioned above.</p>
+		
+          </div>
+         
+        </div>
+        <div class="rightcolumn">
+        
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="popimg" onclick="becamehackerred()"><img src="images/blogs/becamehacker.png" alt=""></div><br>
+            <div class="popimg" onclick="linuxcommandsred()"><img src="images/blogs/linuxcommands.png" alt=""></div><br>
+            <div class="popimg" onclick="securebrowserred()"><img src="images/blogs/securebrowsers.png" alt=""></div>
+          </div>
+          <div class="card">
+            <h3>Categories </h3>
+            <div class="fakeimg"><a href="hacking-category.html">Hacking</a></div><br>
+            <div class="fakeimg"><a href="cybersecurity-category.html">Cyber Security</a></div><br>
+            <div class="fakeimg"><a href="networking-category.html">Networking</a></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h3>Copyright@22BCA290-Azim M.Shaikh</h3>
+      </div>
+</body>
+</html>

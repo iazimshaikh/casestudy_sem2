@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography</title>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg:hover{
+  background-color: black;
+  color: white;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  background-color: black;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.popimg{
+    height: 100px;;
+}
+body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		h2 {
+			font-size: 20px;
+			font-weight: bold;
+			margin-top: 30px;
+		}
+
+		ul {
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+
+		p {
+			margin-top: 10px;
+		}
+
+		blockquote {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			border-left: 2px solid #ccc;
+			font-style: italic;
+		}
+    .card a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  
+
+}
+
+    </style>
+</head>
+<body>
+   
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>What is Cryptography and how it works ?</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="cryptoimg" style="height:300px;"><img src="images/blogs/cryptography.png" height="300px" width="100%" alt=""></div>
+            <h2>WHAT IS CRYPTOGRAPHY || WHAT IS STEGANOGRAPHY || WHAT IS CRYPTOGRAPHY IN SECURITY || DEFINITON OF CRYPTOGRAPHY || CRYPTOGRAPHY AND ITS TYPES</h2>
+            <h1>Cryptography and Steganography</h1>
+
+            <p>Hello friends!</p>
+          
+            <blockquote>So guys, today I am going to tell you what is cryptography and steganography?</blockquote>
+          
+            <h2>1. Cryptography</h2>
+          
+            <p>This is the process of transforming readable data into unreadable form. As an example - You have saved your password in one file and if you will do cryptography process of that file then password will be converted into hash format means anyone can't read your password.</p>
+          
+            <h2>2. Steganography</h2>
+          
+            <p>Steganography means to hide anything behind an image. As an example, hiding virus in image, hiding files and folders behind an image, binding payloads in image and etc. etc.</p>
+          
+            <h3>Tools to perform Steganography:</h3>
+          
+            <ul>
+              <li>Steghide</li>
+              <li>Xiao Steganography</li>
+            </ul>
+          </div>
+         
+        </div>
+        <div class="rightcolumn">
+        
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="popimg" onclick="becamehackerred()"><img src="images/blogs/becamehacker.png" alt=""></div><br>
+            <div class="popimg" onclick="linuxcommandsred()"><img src="images/blogs/linuxcommands.png" alt=""></div><br>
+            <div class="popimg" onclick="securebrowserred()"><img src="images/blogs/securebrowsers.png" alt=""></div>
+          </div>
+          <div class="card">
+            <h3>Categories </h3>
+            <div class="fakeimg"><a href="hacking-category.html">Hacking</a></div><br>
+            <div class="fakeimg"><a href="cybersecurity-category.html">Cyber Security</a></div><br>
+            <div class="fakeimg"><a href="networking-category.html">Networking</a></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h3>Copyright@22BCA290-Azim M.Shaikh</h3>
+      </div>
+</body>
+</html>

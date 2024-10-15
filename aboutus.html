@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Became Hacker</title>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg:hover{
+  background-color: black;
+  color: white;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  background-color: black;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.popimg{
+    height: 100px;;
+}
+header {
+		background-color: #333;
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+	}
+
+	main {
+		margin: 20px;
+	}
+
+	h1, h2, h3 {
+		margin: 10px 0;
+	}
+
+	p {
+		margin: 10px 0;
+	}
+
+	ol {
+		margin-left: 20px;
+	}
+
+	footer {
+		background-color: #333;
+		color: #fff;
+		padding: 10px;
+		text-align: center;
+	}
+
+    .card a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  
+
+}
+.con a{
+    color: black;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+   
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card con">
+            <header>
+                <h1>About Us</h1>
+            </header>
+            <h2 style="text-align: left;">&nbsp; ABOUT US&nbsp;</h2><div>✔ This is a website on cyber security, networking, technology, tech, tips, computer studies and ethical hacking.&nbsp;</div><div>✔ This is a blogging webiste managed by Azim M. Shaikh (Owner) . I am a cyber security guy working in this field from 2 years . So, i decided to spread knowledge about technology and cyber security and that is the reason why i had started blogging and it was one of my dream to became a blogger . So yeah i have started my blogging journey like this.</div><h4 style="text-align: left;">WHAT THIS WEBSITE IS MADE FOR !</h4>
+            <div>✔ This website is maded for helping peoples in the field of computer world like cyber security, tech, tips and related technology and much more.&nbsp;</div>
+            </a><div><br /></div><h4 style="text-align: left;">CONTACT !&nbsp;</h4><div>✔ For any information regarding contact visit our contact page :-&nbsp;<a href="contact.html">Contact page </a></div><div>&nbsp;</div>
+		
+          </div>
+         
+        </div>
+        <div class="rightcolumn">
+        
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="popimg" onclick="becamehackerred()"><img src="images/blogs/becamehacker.png" alt=""></div><br>
+            <div class="popimg" onclick="linuxcommandsred()"><img src="images/blogs/linuxcommands.png" alt=""></div><br>
+            <div class="popimg" onclick="securebrowserred()"><img src="images/blogs/securebrowsers.png" alt=""></div>
+          </div>
+          <div class="card">
+            <h3>Categories </h3>
+            <div class="fakeimg"><a href="hacking-category.html">Hacking</a></div><br>
+            <div class="fakeimg"><a href="cybersecurity-category.html">Cyber Security</a></div><br>
+            <div class="fakeimg"><a href="networking-category.html">Networking</a></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h3>Copyright@22BCA290-Azim M.Shaikh</h3>
+      </div>
+</body>
+</html>

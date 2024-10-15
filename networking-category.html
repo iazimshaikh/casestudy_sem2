@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  background-color: black;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+.popimg{
+    height: 100px;;
+}
+.card a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.card a:hover{
+  color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>NETWORKING</h2>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>What is Network ? Computer Network..</h2>
+            <h5>Published on March 6 2023</h5>
+            <div class="cryptoimg" style="height:300px;"><a href="computernetwork.html"><img src="images/blogs/computernetwork.png" height="300px" width="100%" alt=""></a></div>
+            <p>Some text..</p>
+          </div>
+          <div class="card">
+            <h2>What is IP Address ? Types of IP addresses</h2>
+            <h5>Published on March 6 2023</h5>
+            <div class="cryptoimg" style="height:300px;"><a href="iptypes.html"><img src="images/blogs/hackingsteps.png" height="300px" width="100%" alt=""></a></div>
+            <p>Some text..</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+        
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="popimg"><a href="becamehacker.html"><img src="images/blogs/becamehacker.png" alt=""></a></div><br>
+            <div class="popimg"><a href="linuxcommands.html"><img src="images/blogs/linuxcommands.png" alt=""></a></div><br>
+            <div class="popimg"><a href="securebrowser.html"><img src="images/blogs/securebrowsers.png" alt=""></a></div>
+          </div>
+          <div class="card">
+            <h3>Categories </h3>
+            <div class="fakeimg"><a href="hacking-category.html">Hacking</a></div><br>
+            <div class="fakeimg"><a href="cybersecurity-category.html">Cyber Security</a></div><br>
+            <div class="fakeimg"><a href="networking-category.html">Networkings</a></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h3>Copyright@22BCA290-Azim M.Shaikh</h3>
+      </div>
+</body>
+</html>

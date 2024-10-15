@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head><title>signup.html</title>
+	<style>
+		button{
+			width: 100px;
+			height: 40px;
+			color: white;
+			background-color: black;
+			border-radius: 10px;
+			border: none;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		input[type="text"], input[type="password"], input[type="email"], textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc; /* You can adjust the color and thickness of the outline */
+  background-color: #353535;
+  width: 300px;
+  font-size: 18px;
+  color: white;
+		}
+	 input:focus {
+    color: white;
+}
+table{
+	height: 400px;
+	border-radius: 5px;
+}
+
+	</style>
+</head>
+<body background="images\signupbanner.png">
+<form action="login.html" method=post>
+<br><br><br><br><br>
+                        <h1 align=center>Be a Geek Ready !</h1>
+                        <table border="0" width="40%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535"> 
+						<tr>
+								<td width="10%" style=color:white;font-size:20px;font-family:arial>
+                                        First Name*
+								</td>
+                                   <td width="50%">
+								   <input type="text" size="40" placeholder="Enter firstname" required>
+								</td>
+						</tr>		
+						<tr>
+								<td width="10%" style=color:white;font-size:20px;font-family:arial>
+                                        Last Name*
+								</td>
+                                   <td width="50%">
+								   <input type="text" size="40" placeholder="Enter lastname" required>
+								</td>
+						</tr>		
+                        <tr>
+                                <td width="30%"  style=color:white;font-size:20px;font-family:arial>
+                                   Email*
+								</td>
+                                <td width="50%"  style=color:white;font-size:20px;font-family:arial>
+                                 <input type="email" size="40" placeholder="Enter email" required>
+                                </td>
+						</tr>
+                        <tr>
+                                <td width="30%"  style=color:white;font-size:20px;font-family:arial>
+                                  Password*
+								</td>
+                                <td width="50%"  style=color:white;font-size:20px;font-family:arial>
+                                 <input type="password" size="40" placeholder="Pattern: @Html123" title="Enter first symbol,then any one capital letter,then any small letter characters,then any numbers" pattern=^[@|_|&][A-Z]+[a-z]+[0-9]+$ required>
+                                </td>
+                                 </td>
+						</tr>
+						<tr>
+								
+                                <td width="30%">
+                                   &nbsp;
+                                </td>
+                                <td width="70%">
+                                    <button type="Submit">
+                                        Register
+									</button>&nbsp;&nbsp;&nbsp;
+									<button type="reset">
+                                       Cancel
+									</button>
+								
+                                 </td>
+							 
+                        </tr>	
+						
+						</table>
+						<h3 align=center>Already have an account | <a href="login.html">Login</a></h3>
+</form>
+
+</body>
+</html>

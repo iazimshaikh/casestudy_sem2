@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>thecyberkings.in</title>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+        
+        .navbar{
+            display: flex;
+            align-items: center;
+            background: linear-gradient(108.4deg, rgb(176, 2, 12) 3.3%, rgb(253, 44, 56) 98.4%);
+            width: 100%;
+            margin-top: 0px;
+            overflow: hidden;
+        }
+        .navbar ul{
+            list-style-type: none;
+            margin-left: 300px;
+        }
+        .navbar ul li{
+            display: inline-block;
+            padding: 15px 25px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-size: 22px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        .navbar span{
+            color: white;
+            font-size: 23px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 40px;
+        }
+        .search{
+            width: 200px;
+            height: 27px;
+            margin-left: 22px;
+            border-radius: 15px;
+            border: 2px ridge red;
+            text-align: center;
+
+        }
+        .navli:hover, .navli a:hover{
+            background-color: white;
+            color: red;
+            border-radius: 10px;
+        }
+        :root {
+  --rad: .7rem;
+  --dur: .3s;
+  --color-dark: #2f2f2f;
+  --color-light: #fff;
+  --color-brand: red;
+  --font-fam: 'Lato', sans-serif;
+  --height: 30px;
+  --btn-width: 3rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+        form {
+  position: relative;
+  width: 200px;
+  background: var(--color-brand);
+  border-radius: var(--rad);
+}
+        input, button {
+            height: var(--height);
+            font-family: var(--font-fam);
+            border: 0;
+            color: var(--color-dark);
+            font-size: 1rem;
+            border-radius: 1px solid white;
+        }
+        input[type="search"] {
+            outline: 0; 
+            width: 100%;
+            background: var(--color-light);
+            padding: 0 1.6rem;
+            border-radius: var(--rad);
+            appearance: none; 
+            transition: all var(--dur) var(--bez);
+            transition-property: width, border-radius;
+            z-index: 1;
+            position: relative;
+        }
+        button {
+        
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: var(--btn-width);
+            font-weight: bold;
+            background: var(--color-brand);
+            border-radius: 0 var(--rad) var(--rad) 0;
+            color: white;
+            border: 2px solid white;
+            
+        }
+        input:not(:placeholder-shown) {
+            border-radius: var(--rad) 0 0 var(--rad);
+            width: calc(100% - var(--btn-width));
+        
+        }
+        label {
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0;
+            border: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+        #navsearch button{
+            color: white;
+            }
+
+        .youtube{
+            background-color: #ff4d05;
+            color: seashell;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            font-size: large;
+            transition: .4s;
+            width: 200px;
+            height: 40px;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .youtube:hover{
+            background: linear-gradient(108.4deg, rgb(176, 2, 12) 3.3%, rgb(253, 44, 56) 100%);
+            color: white;
+        }
+        .youtube:hover,
+.youtube:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 adjust-hue(yellow, 45deg);   
+}
+
+        .latestblogs{
+            text-decoration: overline;
+        }
+        #latestblogs{
+            height: 600px;
+            background-color: white;
+        }
+        #latestblogs h1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;
+        }
+        .container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-around;     
+            
+        }
+        .box{
+        height: 450px;
+        width: 350px;
+        border-radius: 10px;
+        min-height: 150px;
+        text-align: center;
+        box-shadow: 3px 3px 10px 0px rgb(0, 0, 0, 0.1);
+        background-color: white;
+        }
+        .box-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px;
+  
+}
+.box-text p{
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+       .box img{
+        border-radius: 10px;
+        margin-top: 10px;
+                /* padding-left: 35px; */
+        
+       }
+       #ourservices{
+        background-color: black;
+       }
+       .ulbox{
+        height: 360px;
+        width: 360px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px 0px rgba(224, 16, 16, 0.651);
+        margin-left: 130px;
+        margin-top: 35px;
+       }
+       .ul{
+        padding-top: 45px;
+        padding-left: 55px;
+       }
+       .footer{
+        display: grid;
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        grid-template-columns: 500px 400px 300px 300px;
+        grid-template-rows: 1fr;
+       }
+       
+       .footimg{
+        margin-top: 20px;
+       }
+       .foot h1{
+        color: white;
+        font-size: 22px;
+        margin-top: 20px;
+       }
+       .foot h4{
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 20px;
+        margin-top: 5px;
+       }
+       .categories a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        letter-spacing: 1px;
+       }
+       .foot h3 {
+        line-height: 10px;
+        letter-spacing: 1px;
+        color: white;
+       }
+       .foot h3 a{
+        color: white;
+        text-decoration: none;
+       }
+       .foot h3 a:hover{
+        color: #ff4d05;
+        
+        text-transform: uppercase;
+       }
+       .copyright{
+       grid-column-start: 1;
+       grid-column-end: 6;
+        color: white;
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+        text-align: center;
+        
+       }
+       .fa {
+        padding: 15px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+        margin-left: 0px;
+        
+    }
+    .fa:hover{
+        color: #ff4d05;
+    }
+    <!--Blogs Section-->
+
+#blogs{
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f5;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+  width: 100%;
+  height: 600px;
+
+}
+.ourblogs{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: overline;
+}
+.blogscontainer {
+  display: flex;
+  width: 100%;
+  margin-left: 50px;
+  
+
+}
+.card {
+  margin: 35px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 150px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: black;
+}
+.tag-purple {
+  background-color: black;
+}
+.tag-pink {
+  background-color: black;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #545d7a;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #111111;
+}
+.about img{
+    height: auto;
+    width: 430px;
+    border-radius: 10px;
+}
+.text{
+    width: 550px;
+    
+}
+.imp{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imp p{
+    font-size: 20px;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <!--HEADER-->
+    <nav class="navbar">
+        <span>TheCyberKings</span>
+        <ul>
+            <li class="navli"><a href="#">Home</a></li>
+            <li class="navli"><a href="aboutus.html">About</a></li>
+            <li class="navli"><a href="#latestblogs">Blogs</a></li>
+            <li class="navli"><a href="contact.html">Contact</a></li>
+            <li class="navli"><a href="login.html">Login</a></li>
+            <li class="navli"><a href="register.html">Register</a></li>
+            <li><form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button type="submit" id="navsearch" value="Go">Go</button>    
+              </form>
+            </li>
+            <!-- <input type="search" class="search" placeholder="Search Here"> -->
+        </ul>
+    </nav>
+
+
+    <!--Ending Header-->
+   
+    <!--Start Intro-->
+	<img src="images\kingsbanner.png" width=100% height=670px>
+    <table id="intro" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor=#111111>
+        <tr>
+		<td width="10%">
+		
+		</td>
+			<td>
+				<h1><big><font face=calibri color=white><font color=red>Watch the latest video !</font><br>
+				How a boy from Gujarat <br>
+				became a 'Ethical Hacker'
+				</font></big></h3><br>
+				<form onsubmit="ys()">
+				<button class="youtube">Visit Channel </button>
+				</form>									
+			</td>
+			<td>
+				<!--<video width="500" height="500" controls autoplay muted>
+					<source src="images\cyberkingsintro.mp4">
+				</video>-->
+				<br><br><br><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/o3XNOK7As0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br><br><br><br>
+			</td>			
+    </table>
+    <!--End Intro-->
+	
+   <!-- Start of Latest Blogs-->
+   <div id="latestblogs"> <h1 class="latestblogs">Latest Blogs</h1>
+
+   <div class="container">
+    <div class="box" onclick="hackstepred()">
+        <img src="images/blogs/hackingsteps.png" width="280px" height="300px" alt="">
+        <div class="box-text">
+        <h4>
+            How hacker hacks our computer ? 
+          </h4>
+          <p>Published - 6-March-2023</p>
+        </div>
+    </div>
+    
+        <div class="box" onclick="hackextred()">
+        <img src="images/blogs/hackersextension.png" width="280px" height="300px" alt="">
+            <div class="box-text">
+        <h4>
+            Extensions Used by the hackers. 
+          </h4>
+          <p>Published - 6-March-2023</p>
+
+            </div>
+          
+        </div>
+            <div class="box" onclick="techackred()">
+                <img src="images/blogs/hack.jpg" width="280px" height="300px" alt="">
+               <div class="box-text">
+                <h4>
+                    Techniques of Hacking
+                  </h4>
+                  <p>Published - 6-March-2023</p>
+
+               </div>
+            </div>
+   </div>
+   </div>
+    <!--Ending of Latest Blogs-->
+
+     <!--Our services -->
+     <table id="ourservices" border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                                <font face="arial" color="white" size="6">
+                                     CONTENTS WE PROVIDE
+                                </font>
+                                <hr width="70" color="red">
+                        
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td width="55%" valign="top">
+                            <div class="ulbox">
+                           <font face="arial" color="#c2c0c3" size=5>
+                            <ul class="ul" type=square>                                
+                                <li for=cyber>Cyber Security Concepts</li><progress id=cyber value="40" max="100"></progress>
+                                <li>Hardware and Networking</li><progress id=cyber value="20" max="100"></progress>
+								<li>Linux OS </li><progress id=cyber value="10" max="100"></progress>
+								<li>Tech Hacks</li><progress id=cyber value="10" max="100"></progress>
+								<li>Codes and Tutorials</li><progress id=cyber value="10" max="100"></progress>
+                            </ul>
+                           </font>
+                           </div>
+                        </td>
+                        <td valign="top">
+                            <img class="contentimg" src="images/content.png" alt="Achievements"  width="90%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--End Our Services-->
+
+<!--Blogs Section-->
+<div id="blogs">
+    <h1 class="ourblogs">OUR BLOGS</h1>
+<div class="blogscontainer">
+    <div class="card" id="becamehackerred" onclick="becamehackerred()">
+      <div class="card-header">
+        <img src="images/blogs/becamehacker.png" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">Hacking</span>
+        <h4>
+            How to became hacker ? How to get started with cyber security
+          
+        </h4>
+        <p>
+          Get started with the basics in hacking
+        </p>
+        <div class="user">
+          <img src="images/myimg.png" alt="user" />
+          <div class="user-info">
+            <h5>Azim Shaikh</h5>
+            <small>2h ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="cryptored()">
+      <div class="card-header">
+        <img src="images/blogs/cryptography.png" alt="ballons" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-purple">Cyber Security</span>
+        <h4>
+          What is Cryptography ? Types of Techniques to do
+        </h4>
+        <p>
+        Technique which makes readable data unreadable
+        </p>
+        <div class="user">
+          <img src="images/myimg.png" alt="user" />
+          <div class="user-info">
+            <h5>Azim Shaikh</h5>
+            <small>Yesterday</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="comnetred()">
+      <div class="card-header">
+        <img src="images/blogs/computernetwork.png" alt="city" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-pink">Networking</span>
+        <h4>
+          What is Computer Network ? Types of Network
+        </h4>
+        <p>
+          Know about the Internet and Network / WWW
+        </p>
+        <div class="user">
+          <img src="images/myimg.png" alt="user" />
+          <div class="user-info">
+            <h5>Azim Shaikh</h5>
+            <small>1w ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="hackstepred()">
+        <div class="card-header">
+          <img src="images/blogs/hackingsteps.png" alt="ballons" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-purple">Hacking</span>
+          <h4>
+            How hacker hacks our computer ? Steps of hacking
+          </h4>
+          <p>
+            Get known how Hackers uses Techniques to hack
+            
+          </p>
+          <div class="user">
+            <img src="images/myimg.png" alt="user" />
+            <div class="user-info">
+              <h5>Azim Shaikh</h5>
+              <small>Yesterday</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</div>
+
+<!--Ending of Blogs Section-->
+
+ <!--about section-->
+ <section class="about">
+    <div class="imp">
+        <img src="myimg.png">
+        <div class="text">
+            <h2><span style=color:white;font-size:75px>About me</span></h2>
+            <p style="color: white;" class="myself">
+                Hi ! I am a student right now doing my bachelor in BCA(Bachelor In Computer Applications/) in first year in semester-II.
+                 I am also a student in the field of cybersecurity, an certified CyberSecure User(SCSU) and also 
+                 Certified Hardware Administrator and right now pursuing for RedHat Ethical Hacking(RHCSA). I have worked with wordpress
+                 and have nice touchup with that Interface.
+            </p>
+          
+        </div>
+    </div>
+
+</section>
+<!--- End of About Section-->
+
+    <!--Start Footer-->
+   <div class="footer">
+    <div class="foot">
+        <img src="images/kingsfooterlogo.png" width="220px" class="footimg" height="100px" alt="">
+        <h4>We are here to provide you best content <br> in the world of Cyber Security. Follow <br>
+        us on our other Social Platforms <br> to stay Updated.</h4>
+    </div>
+    <div class="foot">
+        <h1>CATEGORIES</h1>
+            <h3><a href="hacking-category.html">⨠ Hacking</a></h3>                                        
+             <h3><a href="cybersecurity-category.html">⨠ Cyber Sec</a></h3>
+              <h3><a href="networking-category.html">⨠ Networking</a></h3>
+                                                        
+    </div>
+    <div class="foot">
+        <h1>HELP</h1>
+        <h3><a href="contact.html">⨠ Contact Us</a></h3>                                        
+        <h3><a href="aboutus.html">⨠ About Us</a></h3>
+         <h3><a href="privacypolicy.html">⨠ Privacy Policy</a></h3>
+          
+    </div>
+    <div class="foot">
+        <h1>OUR PLATFORMS</h1>
+        <a href="https://www.instagram.com/i_azim_shaikh" class="fa fa-instagram"></a>
+        <a href="https://www.instagram.com/i_azim_shaikh" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/i_azim_shaikh" class="fa fa-facebook"></a>
+    </div>
+    <div class="foot copyright">
+        <h3 style="font-family: Arial;">Copyright@22BCA290-Azim M.Shaikh</h3>
+    </div>
+   </div>
+			
+    <!--End Footer-->
+</body>

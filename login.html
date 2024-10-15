@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head><title>login</title>
+	<style>
+		.container {
+    width: 28rem;
+	height: 22rem;
+    background-color: #f8f8f8;
+    padding: 15px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 806px;
+    border-radius: 0.7em;
+    box-shadow: 0 1em 4em rgba(71, 50, 4, 0.3);
+
+		}
+		h2{
+    text-align: center;
+    font-size: 32px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 30px;
+    color: rgb(13, 56, 88) ;	
+	text-decoration: overline ;
+	
+  }
+  input,
+  #submit {
+    border: none;
+    outline: none;
+    display: inline;
+	
+  }
+  input {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 2em;
+    font-size: 20px;
+    padding: 1em 0 0.5em 0.5em;
+    border-bottom: 2px solid #202020;
+  }
+  #submit {
+    position: relative;
+    left: 0;
+    font-size: 1.1em;
+    width: 12em;
+    background-color: black;
+    color: white;
+    padding: 0.8em 0;
+    border-radius: 0.3em;
+  }
+  #forgotpass{
+	border: none;
+    outline: none;
+    display: inline;
+  }
+  #forgotpass{
+	position: relative;
+    left: 0;
+    font-size: 1.1em;
+    width: 12em;
+    background-color: black;   /*096292*/
+    color: white;
+    padding: 0.8em 0;
+    border-radius: 0.3em;
+	margin-left: 20px;
+  }
+  #message-ref {
+    font-size: 0.9em;
+    margin-top: 2rem;
+    color: black;
+    visibility: hidden;
+  }
+	</style>
+</head> 
+<body background="images\signinbanner.png">
+ <form action="">
+	<div class="container">
+        <h2>LOGIN</h2>
+      <input type="text" placeholder="Enter Username" id="username" />
+      <input type="password" placeholder="Enter Password" id="password" />
+      <button id="submit">Login</button>
+	  <button id="forgotpass" onclick="forpass()">Forgot Password</button>
+
+      <p id="message-ref">Signed Up Successfully!</p>
+    </div>
+ </form>
+ <script>
+	/*
+    /^[a-zA-Z][a-zA-Z0-9]{3,32}/gi
+    /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm
+*/
+let usernameRef = document.getElementById("username");
+let passwordRef = document.getElementById("password");
+let submitBtn = document.getElementById("submit");
+let messageRef = document.getElementById("message-ref");
+
+let isUsernameValid = () => {
+  /* Username should be contain more than 3 characters. Should begin with alphabetic character  Can contain numbers */
+  const usernameRegex = /^[a-zA-Z][a-zA-Z0-9]{3,32}/gi;
+  return usernameRegex.test(usernameRef.value);
+};
+
+let isPasswordValid = () => {
+  /* Password should be atleast 8 characters long. Should contain atleast 1 number, 1 special symbol , 1 lower case and 1 upper case */
+  const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
+  return passwordRegex.test(passwordRef.value);
+};
+
+usernameRef.addEventListener("input", () => {
+  if (!isUsernameValid()) {
+    messageRef.style.visibility = "hidden";
+    usernameRef.style.cssText =
+      "border-color: #fe2e2e; background-color: #ffc2c2";
+  } else {
+    usernameRef.style.cssText =
+      "border-color: #34bd34; background-color: #c2ffc2";
+  }
+});
+
+passwordRef.addEventListener("input", () => {
+  if (!isPasswordValid()) {
+    messageRef.style.visibility = "hidden";
+    passwordRef.style.cssText =
+      "border-color: #fe2e2e; background-color: #ffc2c2";
+  } else {
+    passwordRef.style.cssText =
+      "border-color: #34bd34; background-color: #c2ffc2";
+  }
+});
+
+submitBtn.addEventListener("mouseover", () => {
+  //If either password or username is invalid then do this..
+  if (!isUsernameValid() || !isPasswordValid()) {
+    //Get the current position of submit btn
+    let containerRect = document
+      .querySelector(".container")
+      .getBoundingClientRect();
+    let submitRect = submitBtn.getBoundingClientRect();
+    let offset = submitRect.left - containerRect.left;
+    console.log(offset);
+    //If the button is on the left hand side.. move it to the the right hand side
+    if (offset <= 100) {
+      submitBtn.style.transform = "translateX(30.25em)";
+    }
+    //Vice versa
+    else {
+      submitBtn.style.transform = "translateX(0)";
+    }
+  }
+});
+submitBtn.addEventListener("click", () => {
+	alert("Login Successfully");
+	
+   messageRef.style.visibility = "visible";
+});
+
+function forpass()
+{
+	alert("This function is not activated right now");
+}
+ </script>
+</body>
+</html> 
